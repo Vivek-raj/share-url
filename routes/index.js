@@ -13,7 +13,7 @@ router.get('/', function(req, res) {
 
 var mongoose = require('mongoose');
 var Post = mongoose.model('Post');
-var Comment = mongoose.model('Comment');
+
 var User = mongoose.model('User');
 
 var auth = jwt({secret: 'SECRET', userProperty: 'payload'});
